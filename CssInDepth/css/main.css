@@ -1,0 +1,55 @@
+/* start overriding default browser styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background-color: black;
+    color: white;
+}
+footer { display: none; }
+
+header, footer {
+    background-color: #333;
+}
+
+header {margin-bottom: 40px; }
+
+main { text-align: center; }
+
+main > article { 
+    text-align: left;
+    display: inline-block;
+    width: 25%;
+
+    border: thin solid white;
+    border-radius: 8px;
+    margin: 0 12;
+}
+
+
+article > h2 {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+
+/* id selectors Always start with a hash */
+#todo {border: 2px solid gray; }
+#inprogress {border: 4px solid greenyellow; }
+#done {border: 4px solid red; }
+
+article:first-of-type h2 { 
+    color: gray;
+}
+#inprogress .inprogress { color: green}
+
+article:nth-of-type(3) h2 { color: red;}
